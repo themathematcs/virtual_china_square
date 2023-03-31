@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0; 
+}
+.headache {
+    background-color:rgba(0, 255, 255, 0.986);
+    height: 75px;  
+    display: flex; 
+}
+.hname{
+    flex-grow: 0.7;
+    padding: 12px;
+    
+}
+.form1{
+    
+    flex-grow: 0.3;  
+}
+.search-br{
+    float: right;
+    padding: 10px;
+    
+}
+.ser{
+    
+    padding: 5px;
+    border: 2px solid transparent; 
+    width: 350px;
+    border-radius:12px ;
+    height: 30px;
+}
+.sbut{
+    width: 50px;
+    padding: 8px;
+    border-radius:12px ;
+    border: 2px solid transparent;    
+}
+.sbut:hover{
+    background-color: rgba(20, 13, 3, 0.192);
+}
+
+.lnk{
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.616);
+    text-align: center; /* Centers the list container */
+}
+ul{ 
+    display: inline-block; /* Displays the list items in one line */
+    list-style: none; /* Removes the default bullet points */
+    padding: 0; /* Removes any default padding */
+    margin: 0; /* Removes any default margin */
+}
+li{
+    padding: 20px;
+    display: inline-block;
+    position: relative; 
+}
+.an{
+    text-decoration: none;
+    padding: 20px;
+    
+    color:beige;
+}
+.an:hover{
+    color: rgba(232, 238, 231, 0.637);
+    border-bottom: 4px double yellow ;
+}
+.active, .lnk ul li:hover {
+   
+    border-radius: 10px;
+ 
+}
+.sub-1{
+    display: none;
+  
+}
+.lnk ul li:hover .sub-1 {
+    position:absolute;
+    display: block;
+    width: 1000px;
+    background-color: rgba(1, 10, 9, 0.301);
+    margin-top: 15px;
+    margin-left: -5px;
+    border-radius: 20px;
+    margin-top: 20px;
+    height: 500px;
+    display: flex;
+
+  
+}
+.lnk ul li:hover .sub-1 ul{
+    margin: 10px;
+    
+}
+.lnk ul li:hover .sub-1 ul li{
+    padding: 10px;
+    list-style-type: none;
+}
+ .su{
+    text-decoration: none;
+}
