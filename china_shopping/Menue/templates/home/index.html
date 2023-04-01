@@ -22,7 +22,7 @@
   
   
   <body>
-    <header class="headache">
+    <header id="box" class="headache">
       <div class="hname">
         <h1>Virtual shopping square</h1>
       </div>
@@ -65,5 +65,32 @@
         <li><a href="#" class="an">contact us</a></li>
       </ul>
     </div>
+
+
+
+
+
+
+
+
+    <script>
+      var box = document.getElementById("box");
+      var boxInitialTop = box.offsetTop;
+
+      window.addEventListener("scroll", function () {
+        var distanceFromTop = boxInitialTop - window.scrollY;
+
+        if (distanceFromTop <= 0) {
+          box.classList.add("fixed");
+        } else {
+          box.classList.remove("fixed");
+        }
+
+        if (window.scrollY <= boxInitialTop) {
+          box.classList.remove("fixed");
+        }
+      });
+
+
   </body>
 </html>

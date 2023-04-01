@@ -5,8 +5,23 @@
 .headache {
     background-color:rgba(0, 255, 255, 0.986);
     height: 75px;  
-    display: flex; 
+    display: flex;
+    position: relative;
+    
+    /* adjust this value to position the div initially */
+ /* add transition to smooth the change in position */
+ transition: all 0.3s ease;
+ width: 100%;
 }
+.headache.fixed {
+    /* set fixed positioning when scrolled to the top */
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    /* add box shadow to create a subtle drop shadow effect */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  }
 .hname{
     flex-grow: 0.7;
     padding: 12px;
