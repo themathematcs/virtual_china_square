@@ -1,5 +1,3 @@
-{% load static %}55
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -22,7 +20,8 @@
   
   
   <body>
-    <header id="box" class="headache">
+   
+    <header class="headache">
       <div class="hname">
         <h1>Virtual shopping square</h1>
       </div>
@@ -65,14 +64,6 @@
         <li><a href="#" class="an">contact us</a></li>
       </ul>
     </div>
-
-
-
-
-
-
-
-
     <script>
       var box = document.getElementById("box");
       var boxInitialTop = box.offsetTop;
@@ -90,7 +81,11 @@
           box.classList.remove("fixed");
         }
       });
+      </script>
+    {%block body%}
 
+
+    {%endblock%}
 
   </body>
 </html>
