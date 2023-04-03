@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    height: 150px;
+    background-color: ghostwhite;
+    display:flex;
+    flex-direction: column;
+    justify-content: center; /* center items horizontally */
+    align-items: center; /* center items vertically */
+}
+.header > h1 {
+    font-family:'Times New Roman', Times, serif;
+
+}
+.lin{
+    height: 70px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lin > ul > li{
+    list-style-type: none;
+    float: left;
+   padding: 15px;
+}
+
+
+.lin > ul > li > a{
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+
+}
+.lin > ul > li > a:hover{
+    border-bottom: 2px solid red;
+}
+
+.lin > ul > li > .sub{
+    display: none;
+}
+.lin > ul > li:hover > .sub {
+    position:absolute;
+    display: block;
+   display: flex;
+   flex-direction: column;
+   
+    height: 200px;
+    width: 150px;
+    border-radius: 23px;
+}
+.lin > ul > li:hover > .sub > ul > li {
+    list-style-type: none;
+    padding-top: 10px;
+    padding: 12px;
+    font-size: 20px;
+    text-align: center;
+    border: 2px solid yellowgreen;
+    border-radius: 13px;
+}
+.lin > ul > li:hover > .sub > ul > li > a{
+    text-decoration: none;
+    color: black;
+    
+}
+.lin > ul > li:hover > .sub > ul > li:hover{
+    background-color: aqua;
+}
+.introduction{
+  padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    height: 650px;
+}
+
+.int1{
+    width: 50%;
+    background-color: rgba(169, 169, 169, 0.226);
+    
+    display: grid;
+    grid-template-areas: 
+    "hd hd hd hd sd sd sd sd"
+    "ft ft ft ft ft ft ft ft";
+    grid-gap: 5px;   
+
+}
+.img1{
+    grid-area: hd;
+    
+    background-image: url(images/OILS/frymate.jpg);
+}
+.img2{
+    grid-area: sd;
+    
+    background-image: url(images/OILS/rina_collection.jpg);
+}
+.img3{
+    grid-area: ft;
+    
+    background-image: url(images/KIFARU_MAIZE_MEAL.jpg);
+}
+.bu{
+    background-color: burlywood;
+    margin: 10px;
+    padding: 20px;
+    
+}
+.int2{
+    
+width: 50%;
+background-color: darkslategray;
+}
+
+.test{
+    height: 800px;
+    display: flex;
+    flex-direction: row;
+    height: 650px;
+}
+.te{
+    width: 50%;
+background-color: darkslategray;
+}
+.te2{
+    width: 50%;
+    background-color: rgba(169, 169, 169, 0.226);
+    display: grid;
+    grid-template-areas: 
+    "hd hd hd hd sd sd sd sd"
+    "ft ft ft ft ft ft ft ft";
+    grid-gap: 5px;   
+
+}
+.ig1{
+    grid-area: hd;
+    
+    background-image: url(images/OILS/top\ oil.jpg);
+}
+.ig2{
+    grid-area: sd;
+    
+    background-image: url(images/AMAIZE_MAIZE_MEAL.jpg);
+}
+.ig3{
+    grid-area: ft;
+    
+    background-image: url(images/jogo_maiz_meal.jpg);
+}
+.advanced{
+    height: 700px;
+   
+}
+.foot{
+    
+    height: 400px;
+    background-color: rgba(18, 72, 31, 0.61);
+    margin: 12px;
+}
+

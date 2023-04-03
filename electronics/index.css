@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+.h{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;  
+}
+
+
+.logo{
+    
+    width: 35%;
+    background-color: rgba(0, 0, 0, 0.829);
+    border-top-right-radius: 34px;
+
+
+}
+.logo > h1{
+       font-weight: bold;
+       font-style: italic;
+       font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman';
+       font-size: 42px;
+       padding-top: 20px;
+       color: rgba(255, 255, 255, 0.774);     
+}
+.empty{
+    
+    width: 30%;
+    
+    background-color: yellow;
+    border-radius: 34px;
+}
+.serch{
+    
+    width: 35%;
+    background-color: rgba(255, 0, 0, 0.89);
+    border-bottom-left-radius: 34px;
+}
+.serch-bar{
+    display: flex;
+   
+}
+.se{
+    margin: 30px;
+    
+}
+.ser{
+padding: 7px;
+width: 300px;
+border-radius: 13px;
+}
+.bu{
+    padding: 7px;
+    width: 80px;
+    border-radius: 13px;
+}
+.lik{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lik > ul{
+    display: flex;
+    padding: 12px;
+    
+}
+.lik > ul > li{
+    list-style-type: none;
+    margin: 12px;
+    padding: 14px;
+    border-right: 7px double rgb(233, 11, 48);
+    border-radius: 12px;
+}
+.lik > ul > li > a{
+    text-decoration: none;
+    font-size: 18px;
+
+    
+    
+}
+.lik > ul > li > a:hover{
+   
+    color:red;
+    
+}
+.promo{
+    background-color: rgba(0, 0, 0, 0.788);
+    height: 100vh;
+    background-image: url(logo.png.webp);
+}
+.down_link{
+    height: 100px;
+}

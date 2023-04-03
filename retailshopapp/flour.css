@@ -1,0 +1,38 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.product{
+    border: 10px solid black;
+    width: 250px;
+    height: 250px;
+    margin-left: 12px;
+    background-image: url(images/KIFARU_MAIZE_MEAL.jpg);
+    background-size: contain;
+}
+.labl{
+    display: flex;
+    background-color: aqua;
+    font-size: 25px;
+    padding-left: 5px;
+    border: 2px solid black;
+    margin-top: 215px;
+    border-radius: 20px;    
+}
+.labl > p {
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.labl > .add{
+    padding: 5px;
+    margin-left: 20px;
+    width: 80px;
+    border-radius: 20px;
+    border: 2px transparent;
+    background-color: greenyellow;
+}
+
