@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="{% static 'cssfiles/index.css' %}"/>
+    <link rel="stylesheet" href="../../../static/cssfiles/index.css"/>
     <script src="https://kit.fontawesome.com/8a8b6e076e.js" crossorigin="anonymous"></script>
   
     <style>
@@ -64,24 +65,7 @@
         <li><a href="#" class="an">contact us</a></li>
       </ul>
     </div>
-    <script>
-      var box = document.getElementById("box");
-      var boxInitialTop = box.offsetTop;
-
-      window.addEventListener("scroll", function () {
-        var distanceFromTop = boxInitialTop - window.scrollY;
-
-        if (distanceFromTop <= 0) {
-          box.classList.add("fixed");
-        } else {
-          box.classList.remove("fixed");
-        }
-
-        if (window.scrollY <= boxInitialTop) {
-          box.classList.remove("fixed");
-        }
-      });
-      </script>
+    
     {%block body%}
 
 
