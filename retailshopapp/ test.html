@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .slideshow-container {
+          position: relative;
+          height: 300px;
+          width: 40%;
+        }
+        .slideshow-image {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 50%;
+          height: 50%;
+          opacity: 0;
+          transition: opacity 1s ease-in-out;
+        }
+        .slideshow-image.active {
+          opacity: 1;
+        }
+        .extra-image {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          opacity: 1;
+          transition: opacity 1s ease-in-out;
+        }
+        .extra-image.hidden {
+          opacity: 0;
+        }
+      </style>
+  </head>    
+</head>
+
+
+
+    <!-- HTML -->
+    <title>test</title>
+
+    
+<div class="slideshow-container">
+    <img class="slideshow-image" src="images/AJAB_MAIZE_MEAL.jpg">
+    <img class="slideshow-image" src="images/AMAIZE_MAIZE_MEAL.jpg">
+    <img class="slideshow-image" src="images/DOLA_MAIZE_MEAL.jpg">
+    <img class="slideshow-image" src="images/DOLA_MAIZE_MEAL.jpg">
+    <img class="slideshow-image" src="images/JOGO_10_KG.jpg">
+  </div>
+  
+ 
+  
+  <!-- JavaScript -->
+  <script>
+    const slideshowImages = document.querySelectorAll('.slideshow-image');
+    const extraImage = document.querySelector('.extra-image');
+    let currentSlideIndex = 0;
+  
+    setInterval(() => {
+      currentSlideIndex++;
+      if (currentSlideIndex >= slideshowImages.length) {
+        currentSlideIndex = 0;
+      }
+  
+      slideshowImages.forEach((image, index) => {
+        if (index === currentSlideIndex) {
+          image.classList.add('active');
+        } else {
+          image.classList.remove('active');
+        }
+      });
+    }, 5000);
+  
+    setInterval(() => {
+      if (currentSlideIndex === 0) {
+        extraImage.classList.remove('hidden');
+      } else {
+        extraImage.classList.add('hidden');
+      }
+    }, 1000);
+  </script>
+
+</body>
+  </html>
+  
